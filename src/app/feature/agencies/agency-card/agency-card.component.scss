@@ -1,0 +1,21 @@
+.agency-image {
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.border-radius-card {
+  border-radius: 15px;
+}
+
+::ng-deep app-agency-card {
+  app-agency-map {
+    height: 180px;
+    padding: 10px;
+    #map {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+  }
+}

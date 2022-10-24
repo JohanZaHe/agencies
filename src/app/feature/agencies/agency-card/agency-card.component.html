@@ -1,0 +1,17 @@
+<div class="card border-radius-card ms-1 me-2 mb-2" style="width: 18rem">
+    <app-agency-map [agency]="agency"></app-agency-map>
+    <div class="card-body">
+        <div class="d-flex flex-row flex-wrap align-items-center">
+            <img src="{{'https://api.lorem.space/image/house?w=100&h=100&time=' + index}}" class="agency-image" />
+            <h5 class="card-title ms-2 d-inline-block text-truncate" style="max-width: 12rem">{{ agency.agencia }}</h5>
+        </div>
+        <p class="card-text d-flex flex-column">
+            <span class="d-inline-block text-truncate" style="max-width: 18rem">
+                {{ agency.direccion }}
+            </span>
+            <span class="d-inline-block text-truncate text-secondary" style="max-width: 18rem">{{
+                agency.distrito}}</span>
+        </p>
+        <a class="card-link" (click)="seeDetails()">See details</a>
+    </div>
+</div>

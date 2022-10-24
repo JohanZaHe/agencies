@@ -1,0 +1,9 @@
+::ng-deep app-agency-detail {
+  app-agency-map {
+    height: 180px;
+    #map {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+  }
+}
